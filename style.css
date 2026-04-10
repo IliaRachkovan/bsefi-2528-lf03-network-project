@@ -1,0 +1,50 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.release {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+
+.darkmode {
+    background: transparent;
+    border: 0px;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.wrapper {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 15px;
+    background-image: url("gta6.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0px 11px 10px -7px rgba(0, 0, 0, 0.44);
+}
+
+@media only screen and (max-width: 550px) {
+    .wrapper {
+        width: 100%;
+    }
+}
