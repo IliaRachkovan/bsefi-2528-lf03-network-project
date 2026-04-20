@@ -34,6 +34,7 @@ function checkDarkmode() {
     if (darkmode !== null) {
         darkmodeDiv.textContent = darkmode ? '☀️' : '🌑'
         document.body.style.backgroundColor = darkmode ? '#000' : '#fff'
+        document.body.style.color = darkmode ? '#fff' : '#000s'
     }
 }
 
