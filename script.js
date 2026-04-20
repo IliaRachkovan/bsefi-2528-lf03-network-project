@@ -4,6 +4,7 @@ const showMinutes = document.getElementById('minutes')
 const showSeconds = document.getElementById('seconds')
 
 const darkmodeDiv = document.querySelector('.darkmode')
+const navLink = document.querySelector('.nav-link')
 
 let isDarkmode = JSON.parse(localStorage.getItem('darkmode')) ? JSON.parse(localStorage.getItem('darkmode')) : false
 
@@ -34,7 +35,8 @@ function checkDarkmode() {
     if (darkmode !== null) {
         darkmodeDiv.textContent = darkmode ? '☀️' : '🌑'
         document.body.style.backgroundColor = darkmode ? '#000' : '#fff'
-        document.body.style.color = darkmode ? '#fff' : '#000s'
+        document.body.style.color = darkmode ? '#fff' : '#000'
+        navLink.style.color = darkmode ? '#fff' : '#000'
     }
 }
 
