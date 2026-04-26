@@ -3,6 +3,8 @@
 @import "custom-grid.css";
 @import "header.css";
 @import "gta-block.css";
+@import "learning-plan.css";
+@import "group.css";
 
 p {
     display: flex;

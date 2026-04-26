@@ -1,0 +1,25 @@
+.learning-plan {
+    padding: calc(var(--spacer)*3.2) 0;
+
+    .learning-plan-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .learning-plan-table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+        }
+    }
+}
