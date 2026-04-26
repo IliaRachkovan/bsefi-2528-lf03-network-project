@@ -1,0 +1,22 @@
+@import "variables.css";
+@import "reset.css";
+@import "custom-grid.css";
+@import "header.css";
+@import "gta-block.css";
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+
+.darkmode {
+    background: transparent;
+    border: 0px;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}

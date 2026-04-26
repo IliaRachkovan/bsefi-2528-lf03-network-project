@@ -1,0 +1,19 @@
+.header {
+    padding: calc(var(--spacer)*2.4) 0;
+
+    .header-row {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex: 1;
+
+        .header-nav-list {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+}
