@@ -1,0 +1,16 @@
+footer {
+    justify-content: space-evenly;
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+        }
+    }
+}

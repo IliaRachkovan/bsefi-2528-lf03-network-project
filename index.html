@@ -15,7 +15,7 @@
                 <nav class="nav-menu">
                     <ul class="header-nav-list">
                         <li><a class="nav-link" href="https://www.bbs-nienburg.de/">BBS-Nienburg</a></li>
-                        <li>Das sind wir</li>
+                        <li><a href="#group">Das sind wir</a></li>
                         <li>Unser Tag</li>
                     </ul>
                 </nav>
@@ -36,7 +36,7 @@
         </div>
         <script src="script.js"></script>
 
-        <section class="learning-plan">
+        <section class="learning-plan" id="learning-plan">
             <div class="container learning-plan-container">
                 <h2 class="h2">Unser Lernplan</h2>
                 <table class="learning-plan-table">
@@ -87,151 +87,141 @@
                 </table>
             </div>
         </section>
-        <section class="group">
+        <section class="group" id="group">
             <div class="container group-container">
                 <h2 class="h2">Unsere Gruppe</h2>
                 <table class="group-table">
                     <tr>
                         <th>Vorname</th>
                         <th>Nachname</th>
-                        <th>Geburtsdatum</th>
                         <th>Firma</th>
                     </tr>
                     <tr>
                         <td>Abbe</td>
                         <td>Voigts</td>
-                        <td></td>
                         <td>KeSolutions GmbH</td>
                     </tr>
                     <tr>
                         <td>Boas</td>
                         <td>Mangold</td>
-                        <td>1999</td>
                         <td>KeSolutions GmbH</td>
                     </tr>
                     <tr>
                         <td>Elias</td>
                         <td>Pepler</td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>Elvin</td>
                         <td>Klein</td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>Erik</td>
                         <td>Dück</td>
-                        <td>08.03.2006</td>
                         <td>Thies & Co. </td>
                     </tr>
                     <tr>
                         <td>Florian</td>
                         <td>Ruf</td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>Hannes</td>
                         <td>Meiners</td>
-                        <td></td>
-                        <td></td>
+                        <td>L.Horstmann GmbH</td>
                     </tr>
                     <tr>
                         <td>Illia</td>
                         <td>Rachkovan</td>
-                        <td>01.03.1994</td>
                         <td>Hermann Hartje KG</td>
                     </tr>
                     <tr>
                         <td>Jonas</td>
                         <td>Vollenwender</td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>Katharina</td>
                         <td>Albrecht</td>
-                        <td></td>
                         <td>Göbber GmbH</td>
                     </tr>
                     <tr>
                         <td>Kevin</td>
                         <td>Kowalzik</td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>Lasse</td>
                         <td>Klusmann</td>
-                        <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>Malte</td>
                         <td>Busche</td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>Mika</td>
                         <td>Kasten</td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>Niklas</td>
                         <td>Reunitz</td>
-                        <td></td>
                         <td>KeSolutions GmbH</td>
                     </tr>
                     <tr>
                         <td>Pascal</td>
                         <td>Keuwel</td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>Sven</td>
                         <td>Döpke</td>
-                        <td></td>
-                        <td>OMT</td>
+                        <td>OMT Hoya</td>
                     </tr>
                     <tr>
                         <td>Timo</td>
                         <td>Döpke</td>
                         <td></td>
-                        <td></td>
                     </tr>
                 </table>
             </div>
         </section>
-        <footer>
-            <nav>
-                <h3>Unsere Adresse</h3>
-                <ul>
-                    <li>
-                        <p>Berliner Ring 45</p>
-                    </li>
-                    <li>
-                        <p>31582 Nienburg/Weser</p>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li></li>
-                </ul>
-            </nav>
-        </footer>
     </main>
+    <footer>
+        <div class="container">
+            <div class="row footer-row">
+                <nav class="col col-4 footer-menu   ">
+                    <h3 class="h3">Unsere Adresse</h3>
+                    <ul class="our-address">
+                        <li>
+                            <p>Berliner Ring 45</p>
+                        </li>
+                        <li>
+                            <p>31582 Nienburg/Weser</p>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="col col-4 footer-menu">
+                    <h3 class="h3">Kontakt</h3>
+                    <ul class="contact-us">
+                        <li>Telefon: 05021 609-0</li>
+                        <li>Telefax: 05021 609-259</li>
+                        <li>E-Mail: bbs@bbs-nienburg.de</li>
+                    </ul>
+                </nav>
+                <nav class="col col-4 footer-menu">
+                    <h3 class="h3">Information</h3>
+                    <ul class="our-information">
+                        <li><a href="https://www.bbs-nienburg.de/portal/startseite.html">BBS-Nienburg</a></li>
+                        <li><a href="#learning-plan">Lernplan</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
 @import "gta-block.css";
 @import "learning-plan.css";
 @import "group.css";
+@import "footer.css";
 
 p {
     display: flex;
