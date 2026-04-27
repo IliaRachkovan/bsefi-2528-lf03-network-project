@@ -20,5 +20,10 @@
         td {
             text-align: center;
         }
+
+        td,
+        th {
+            padding: calc(var(--spacer)*0.5);
+        }
     }
 }

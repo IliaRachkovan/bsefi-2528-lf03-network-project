@@ -1,5 +1,7 @@
 .wrapper {
-    max-width: 700px;
+    display: flex;
+    max-width: 75%;
+    height: 120vh;
     margin: calc(var(--spacer)*3.2) auto;
     background-image: url("../gta6.avif");
     background-repeat: no-repeat;
@@ -25,4 +27,8 @@
     -webkit-text-fill-color: #fff;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: black;
+
+    p {
+        font-size: 50px;
+    }
 }

@@ -10,7 +10,9 @@ html {
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
+    background-color: var(--background-main-color);
 }
+
 
 h1,
 h2,
@@ -38,7 +40,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 p {
