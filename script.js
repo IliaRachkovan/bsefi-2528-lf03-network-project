@@ -34,8 +34,8 @@ function checkDarkmode() {
     const darkmode = JSON.parse(localStorage.getItem('darkmode'))
     if (darkmode !== null) {
         darkmodeDiv.textContent = darkmode ? '☀️' : '🌑'
-        document.body.style.backgroundColor = darkmode ? '#000' : '#fff'
-        document.body.style.color = darkmode ? '#fff' : '#000'
+        document.body.style.backgroundColor = darkmode ? '#18181b' : '#ffffff'
+        document.body.style.color = darkmode ? '#ffffff' : '#000'
         navLink.style.color = darkmode ? '#fff' : '#000'
     }
 }
