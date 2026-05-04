@@ -3,6 +3,8 @@ const showHours = document.getElementById('hours')
 const showMinutes = document.getElementById('minutes')
 const showSeconds = document.getElementById('seconds')
 
+const witzP = document.querySelector('.witz')
+
 const darkmodeDiv = document.querySelector('.darkmode')
 const navLink = document.querySelector('.nav-link')
 
@@ -14,6 +16,8 @@ const _second = 1000
 const _minute = _second * 60
 const _hour = _minute * 60
 const _day = _hour * 24
+
+let witz
 
 function calcReleaseTime() {
     let dateNow = new Date()
@@ -40,6 +44,20 @@ function checkDarkmode() {
     }
 }
 
+
+const fetchWitz = async () => {
+    const response = await fetch("https://witzapi.de/api/joke")
+    if (!response.ok) {
+        console.log("Etwas ist schief gelaufen.")
+    }
+    const data = await response.json()
+
+    witzP.textContent = data[0].text
+}
+
+fetchWitz()
+
+
 darkmodeDiv.addEventListener('click', () => {
     isDarkmode = !isDarkmode
     localStorage.setItem('darkmode', JSON.stringify(isDarkmode))
@@ -50,6 +68,6 @@ calcReleaseTime()
 
 setInterval(() => calcReleaseTime(), 1000)
 
-window.onload = () => {
+window.onload = async () => {
     checkDarkmode()
 }
