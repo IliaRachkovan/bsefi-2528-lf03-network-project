@@ -37,6 +37,10 @@ function checkDarkmode() {
         document.body.style.backgroundColor = darkmode ? '#18181b' : '#ffffff'
         document.body.style.color = darkmode ? '#ffffff' : '#000'
         navLink.style.color = darkmode ? '#fff' : '#000'
+
+        document.querySelectorAll('th, td').forEach(el => {
+            el.style.borderColor = darkmode ? '#ffffff' : '#000'
+        })
     }
 }
 
